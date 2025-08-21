@@ -1,0 +1,830 @@
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     376	   3421240 ns/op	 4467255 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     334	   3396254 ns/op	 4710616 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     349	   3436970 ns/op	 4718288 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     337	   3342115 ns/op	 4505866 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     339	   3363185 ns/op	 4752605 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     327	   3426501 ns/op	 4670250 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     343	   3371092 ns/op	 4721431 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     351	   3353145 ns/op	 4631214 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     354	   3301086 ns/op	 4621490 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     356	   3474467 ns/op	 4701917 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     355	   3447037 ns/op	 4649929 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     343	   3360914 ns/op	 4807451 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     363	   3431537 ns/op	 4535243 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     336	   3327016 ns/op	 4494244 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     333	   3345846 ns/op	 4560307 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     348	   3376174 ns/op	 4744039 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     342	   3368092 ns/op	 4673704 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     355	   3424814 ns/op	 4667745 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     348	   3416900 ns/op	 4586582 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     346	   3380977 ns/op	 4625442 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     352	   3373907 ns/op	 4635923 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     337	   3541107 ns/op	 4855995 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     328	   3415518 ns/op	 4636670 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     352	   3400430 ns/op	 4665847 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     361	   3370816 ns/op	 4507994 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     355	   3388543 ns/op	 4697425 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     325	   3421398 ns/op	 4725101 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     345	   3362710 ns/op	 4730537 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     342	   3363356 ns/op	 4451886 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     331	   3440802 ns/op	 4664403 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     348	   3471549 ns/op	 4713737 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     332	   3452030 ns/op	 4948590 B/op	   38004 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     337	   3370845 ns/op	 4768455 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     330	   3459876 ns/op	 4774424 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     346	   3364079 ns/op	 4625438 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     333	   3456763 ns/op	 4591933 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     338	   3405964 ns/op	 4754289 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     339	   3389717 ns/op	 4659364 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     339	   3425464 ns/op	 4671786 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     343	   3432123 ns/op	 4838146 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     349	   3433674 ns/op	 4730346 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     334	   3379896 ns/op	 4779993 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     355	   3428143 ns/op	 4649942 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     342	   3403100 ns/op	 4488866 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     343	   3384428 ns/op	 4549420 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     332	   3391925 ns/op	 4593163 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     342	   3433726 ns/op	 4735323 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     338	   3425729 ns/op	 4729334 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     315	   3525342 ns/op	 4875968 B/op	   38003 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=32_EDS=64x64-20         	     342	   3419182 ns/op	 4926319 B/op	   38004 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	138.733s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     163	   6391268 ns/op	24267436 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6317124 ns/op	23804694 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     168	   6733590 ns/op	23508756 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     144	   6987554 ns/op	23934876 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     168	   6647608 ns/op	24511662 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     164	   6236409 ns/op	24346077 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     164	   6641342 ns/op	25103929 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     169	   6468715 ns/op	24997972 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     166	   6229963 ns/op	23116008 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6243510 ns/op	23606307 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     165	   6350793 ns/op	23733511 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6441768 ns/op	24436748 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6586765 ns/op	25465541 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     175	   6468426 ns/op	24498063 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     160	   6328494 ns/op	23895538 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     169	   6312719 ns/op	23900736 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6663471 ns/op	24684433 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     162	   6506761 ns/op	24240987 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     164	   6484529 ns/op	23536295 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     175	   6605529 ns/op	24653937 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     162	   6392341 ns/op	23550730 B/op	  216955 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     175	   6553894 ns/op	25039652 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     163	   6335172 ns/op	23789410 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     168	   6189592 ns/op	23495866 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     162	   6422407 ns/op	24383394 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     166	   6498910 ns/op	25388340 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     169	   6053016 ns/op	23576255 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     162	   6396725 ns/op	24461781 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     166	   6124453 ns/op	23077818 B/op	  216955 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     165	   6433259 ns/op	24155111 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     169	   6332822 ns/op	24224551 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6279637 ns/op	23718158 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     163	   6346031 ns/op	24513308 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     174	   6665980 ns/op	24316238 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     169	   6329174 ns/op	23426825 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     177	   6680150 ns/op	24914200 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     174	   6764525 ns/op	24849189 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     171	   6176140 ns/op	23155117 B/op	  216955 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     165	   6301160 ns/op	24053120 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6154816 ns/op	23792212 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     194	   6161385 ns/op	23864067 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     166	   6232280 ns/op	24169700 B/op	  216957 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     168	   6583350 ns/op	25076393 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6742581 ns/op	25416002 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     159	   6338456 ns/op	23653161 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     170	   6536432 ns/op	24536023 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     164	   6298920 ns/op	23870445 B/op	  216956 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     174	   6267844 ns/op	24474065 B/op	  216959 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     163	   6453706 ns/op	24461813 B/op	  216958 allocs/op
+BenchmarkDatarootGeneration/NMT_k=32_EDS=64x64-20         	     175	   6471034 ns/op	24389264 B/op	  216957 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	147.216s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     237	   4836875 ns/op	14444270 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     217	   4954451 ns/op	14338767 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     218	   4791533 ns/op	14285819 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     242	   4848888 ns/op	14280686 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     212	   5318922 ns/op	15318433 B/op	  127482 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     223	   4924938 ns/op	14499067 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     226	   4981031 ns/op	14893071 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     243	   5171848 ns/op	15135006 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     213	   4915960 ns/op	14447846 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     247	   4760100 ns/op	14217627 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     219	   5029918 ns/op	14838855 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     217	   4839443 ns/op	14484566 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     214	   5042964 ns/op	14156750 B/op	  127479 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     217	   5014334 ns/op	15057491 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     248	   4886510 ns/op	14417806 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     228	   4871243 ns/op	14527540 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     235	   4830767 ns/op	14382543 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     235	   4680066 ns/op	14005798 B/op	  127479 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     223	   4836379 ns/op	14234586 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     228	   4969744 ns/op	14675547 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     210	   4781242 ns/op	14324377 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     225	   5048566 ns/op	14862800 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     240	   5044800 ns/op	14280321 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     236	   4992337 ns/op	14502750 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     220	   4774114 ns/op	14132654 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     231	   4810137 ns/op	14812437 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     228	   4841142 ns/op	14407471 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     231	   4799179 ns/op	14456730 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     228	   4574418 ns/op	14111595 B/op	  127479 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     234	   4989963 ns/op	14792518 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     222	   4850569 ns/op	14219909 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     225	   5066620 ns/op	15152952 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     226	   4913767 ns/op	14389465 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     228	   5226802 ns/op	15461218 B/op	  127482 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     237	   5184300 ns/op	14426556 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     217	   4693243 ns/op	13872794 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     232	   5099190 ns/op	14778393 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     229	   4667538 ns/op	14145069 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     229	   5032192 ns/op	14752196 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     232	   5019992 ns/op	13942591 B/op	  127479 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     219	   4820260 ns/op	13818935 B/op	  127479 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     222	   4936348 ns/op	14305347 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     238	   4729818 ns/op	14191498 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     240	   4586796 ns/op	13832533 B/op	  127479 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     238	   4907246 ns/op	14961945 B/op	  127482 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     240	   4829028 ns/op	14262795 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     232	   4771928 ns/op	14242474 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     219	   4971721 ns/op	14704368 B/op	  127481 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     220	   4969552 ns/op	14630767 B/op	  127480 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=32_EDS=64x64-20         	     213	   5079718 ns/op	15338262 B/op	  127481 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	149.107s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     283	   4239108 ns/op	 9826262 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     260	   4328542 ns/op	 9673900 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     282	   4334317 ns/op	 9702562 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     266	   4326804 ns/op	 9353073 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     259	   4115663 ns/op	 9408871 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     248	   4396017 ns/op	10225916 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     253	   4507670 ns/op	 9956268 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     303	   3607562 ns/op	 9521695 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     258	   4253926 ns/op	 9574350 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     280	   4240183 ns/op	 9679069 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     260	   4282964 ns/op	 9706282 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     270	   4144639 ns/op	 9555439 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     262	   4411303 ns/op	10069246 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     260	   4277602 ns/op	10038529 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     268	   3994003 ns/op	 9482706 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     259	   4239633 ns/op	 9579417 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     266	   4229142 ns/op	 9844174 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     278	   4281750 ns/op	 9950597 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     260	   4356737 ns/op	10151902 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     268	   4331408 ns/op	 9930807 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     264	   4311978 ns/op	10099594 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     262	   4342391 ns/op	 9554428 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     264	   4298707 ns/op	10075576 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     261	   4169106 ns/op	 9832119 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     249	   4458304 ns/op	 9788632 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     284	   4283512 ns/op	 9681453 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     277	   4213028 ns/op	 9894124 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     246	   4437984 ns/op	10220390 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     266	   4239183 ns/op	 9646167 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     246	   4413410 ns/op	 9775020 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     246	   4313132 ns/op	 9860856 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     250	   4258255 ns/op	 9624635 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     280	   4437433 ns/op	10183189 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     253	   4485099 ns/op	10197778 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     252	   4388329 ns/op	10044687 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     250	   4253906 ns/op	 9472850 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     250	   4078326 ns/op	 9599150 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     252	   4216370 ns/op	10136472 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     256	   4250913 ns/op	 9868752 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     268	   4225505 ns/op	 9789135 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     255	   4345737 ns/op	10021573 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     282	   4141618 ns/op	 9739775 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     237	   4369110 ns/op	10487711 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     244	   4442832 ns/op	10353009 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     285	   4308334 ns/op	 9789328 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     256	   4330623 ns/op	 9794686 B/op	   82809 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     262	   3964551 ns/op	 9803797 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     270	   4223969 ns/op	 9641276 B/op	   82808 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     262	   4331377 ns/op	 9562440 B/op	   82807 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=32_EDS=64x64-20         	     260	   4188138 ns/op	 9487437 B/op	   82808 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	154.944s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     285	   3805992 ns/op	 7098096 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     295	   3870451 ns/op	 7312547 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     294	   3945733 ns/op	 7816482 B/op	   60568 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     390	   3891599 ns/op	 7267489 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     292	   3888942 ns/op	 7513766 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     288	   4040314 ns/op	 7693529 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     280	   3925130 ns/op	 7444058 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     327	   3920441 ns/op	 7089852 B/op	   60566 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     289	   3686232 ns/op	 7267208 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     304	   3692977 ns/op	 7495026 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     304	   4000182 ns/op	 7716862 B/op	   60568 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     288	   4015446 ns/op	 7591261 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     282	   3664829 ns/op	 7408746 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     284	   4033559 ns/op	 7477835 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     337	   3960031 ns/op	 7290418 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     268	   3817478 ns/op	 7312898 B/op	   60566 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     274	   3941521 ns/op	 7568377 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     292	   4025024 ns/op	 7492164 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     268	   3777916 ns/op	 7242276 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     297	   3921900 ns/op	 7365108 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     285	   3995081 ns/op	 7282766 B/op	   60566 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     300	   4098600 ns/op	 7491679 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     280	   4137256 ns/op	 7760029 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     260	   4055648 ns/op	 7721318 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     266	   3810346 ns/op	 7214496 B/op	   60566 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     273	   3992481 ns/op	 7803264 B/op	   60568 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     296	   4035680 ns/op	 7651864 B/op	   60566 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     295	   4044925 ns/op	 7319612 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     308	   3976945 ns/op	 7628116 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     288	   3783238 ns/op	 7071669 B/op	   60566 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     276	   3900132 ns/op	 7546653 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     279	   3731339 ns/op	 7341065 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     274	   3861694 ns/op	 7599110 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     291	   3938139 ns/op	 7458731 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     265	   4153792 ns/op	 7948231 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     319	   3903871 ns/op	 7417111 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     283	   3836129 ns/op	 7361465 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     277	   3920308 ns/op	 7460004 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     283	   3944397 ns/op	 7659307 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     308	   3924206 ns/op	 7450267 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     264	   3859488 ns/op	 7362421 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     298	   3934479 ns/op	 7334551 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     270	   3910138 ns/op	 7160005 B/op	   60566 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     278	   4078044 ns/op	 7540408 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     285	   3917278 ns/op	 7364148 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     282	   4008237 ns/op	 7431204 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     310	   3999849 ns/op	 7703535 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     280	   4019633 ns/op	 7541906 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     320	   4021501 ns/op	 7586192 B/op	   60567 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=32_EDS=64x64-20         	     303	   3870240 ns/op	 7254194 B/op	   60567 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	160.647s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     127	   9208472 ns/op	18148375 B/op	  147670 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     120	   9478430 ns/op	18590892 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     128	   9317378 ns/op	17765090 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     128	   9314551 ns/op	19703663 B/op	  147670 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     124	   9263276 ns/op	18758205 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     124	   9001275 ns/op	17197990 B/op	  147668 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     126	   9391482 ns/op	17502679 B/op	  147668 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     126	   9319325 ns/op	19038122 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     129	   9519701 ns/op	18105072 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     128	   9244106 ns/op	18192219 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     130	   9387128 ns/op	19539872 B/op	  147670 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     128	   9400718 ns/op	18192190 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     128	   9073247 ns/op	17765072 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     123	   9264620 ns/op	18512229 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     129	   9281262 ns/op	19050620 B/op	  147670 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     127	   9275863 ns/op	18909907 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     128	   9305495 ns/op	17830798 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     127	   9026554 ns/op	17022240 B/op	  147668 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     124	   9189216 ns/op	18995623 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     129	   9360041 ns/op	18854970 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     126	   9105677 ns/op	20173047 B/op	  147670 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     126	   9258092 ns/op	18237075 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     126	   9330868 ns/op	19171684 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     128	   8625067 ns/op	18619389 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     127	   9266294 ns/op	18545633 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     126	   9149167 ns/op	18036790 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     129	   8952815 ns/op	16409719 B/op	  147667 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     126	   9752114 ns/op	17769771 B/op	  147669 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     123	   9000284 ns/op	17691597 B/op	  147668 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=64_EDS=128x128-20         	     129	   9233111 ns/op	19441806 B/op	  147669 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	134.901s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      54	  19729219 ns/op	105395528 B/op	  866472 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      61	  19252685 ns/op	99364810 B/op	  866472 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      58	  18354831 ns/op	97513430 B/op	  866468 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      51	  20692541 ns/op	105873203 B/op	  866474 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      58	  18841074 ns/op	100341941 B/op	  866471 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      61	  19031863 ns/op	102536166 B/op	  866472 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      60	  18338171 ns/op	98418002 B/op	  866471 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      66	  17687680 ns/op	96595161 B/op	  866469 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      63	  18887501 ns/op	103503898 B/op	  866470 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      62	  19305083 ns/op	106453665 B/op	  866473 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      67	  18291145 ns/op	102003534 B/op	  866470 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      66	  17424687 ns/op	99080498 B/op	  866469 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      62	  18837707 ns/op	100077840 B/op	  866471 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      70	  17251617 ns/op	98917863 B/op	  866468 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      54	  20297343 ns/op	104305546 B/op	  866472 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      56	  19252004 ns/op	100825379 B/op	  866468 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      60	  17708906 ns/op	102692981 B/op	  866469 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      76	  16499304 ns/op	95857080 B/op	  866466 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      58	  18244818 ns/op	99254984 B/op	  866474 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      56	  18844346 ns/op	102628808 B/op	  866473 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      55	  19533304 ns/op	103184268 B/op	  866472 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      52	  20333246 ns/op	104090278 B/op	  866472 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      69	  17624533 ns/op	97173645 B/op	  866466 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      63	  18968571 ns/op	101634127 B/op	  866466 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      60	  18437353 ns/op	99329083 B/op	  866470 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      60	  18515564 ns/op	97787100 B/op	  866470 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      58	  19599577 ns/op	106505615 B/op	  866475 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      61	  19287966 ns/op	103570278 B/op	  866472 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      76	  16822191 ns/op	94418129 B/op	  866465 allocs/op
+BenchmarkDatarootGeneration/NMT_k=64_EDS=128x128-20         	      79	  16857343 ns/op	95006735 B/op	  866466 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	85.980s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      80	  13869144 ns/op	55332389 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  13214468 ns/op	55952859 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  13100484 ns/op	56036291 B/op	  507066 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  13670641 ns/op	56499713 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      74	  14186306 ns/op	55194863 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      88	  13849346 ns/op	58864775 B/op	  507072 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  13121583 ns/op	54943446 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  13294970 ns/op	56162726 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      81	  14001368 ns/op	57525085 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  13799696 ns/op	58938481 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  14275017 ns/op	60116054 B/op	  507069 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  12496669 ns/op	55784284 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  12838163 ns/op	54859006 B/op	  507066 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  12706630 ns/op	54522982 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  13355222 ns/op	57046312 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      88	  14457367 ns/op	57287160 B/op	  507069 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  14014341 ns/op	56667091 B/op	  507066 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      82	  15759747 ns/op	63204415 B/op	  507073 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      92	  13541172 ns/op	54822648 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      82	  14153360 ns/op	58689996 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      78	  14418040 ns/op	57679252 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      75	  13957376 ns/op	58237510 B/op	  507068 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     103	  15351562 ns/op	56699005 B/op	  507069 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      64	  15750858 ns/op	59617965 B/op	  507073 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      76	  14112047 ns/op	54283859 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      85	  14306603 ns/op	58557363 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  12891375 ns/op	54691205 B/op	  507067 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	      75	  13884826 ns/op	57003841 B/op	  507066 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  12448859 ns/op	54270277 B/op	  507066 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=64_EDS=128x128-20         	     100	  12369100 ns/op	56667336 B/op	  507067 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	108.333s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	      97	  12147290 ns/op	37264254 B/op	  327613 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12525480 ns/op	39269982 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12290227 ns/op	39690900 B/op	  327613 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12204757 ns/op	38723364 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12198330 ns/op	38429238 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12114349 ns/op	37461633 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12285987 ns/op	37293786 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12274705 ns/op	37798533 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12132821 ns/op	37671771 B/op	  327609 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12295721 ns/op	37587387 B/op	  327608 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  11563253 ns/op	36284460 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12626173 ns/op	38555349 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	      91	  13236764 ns/op	43021303 B/op	  327614 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12614548 ns/op	39690633 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12456614 ns/op	39985200 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12179301 ns/op	38765513 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12235636 ns/op	36578815 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12179498 ns/op	37671826 B/op	  327610 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12275076 ns/op	38639391 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12459047 ns/op	43265615 B/op	  327613 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  11832085 ns/op	36873185 B/op	  327610 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12136536 ns/op	39859106 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12161897 ns/op	38765900 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  11799907 ns/op	38176489 B/op	  327610 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12153374 ns/op	37082709 B/op	  327609 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12149455 ns/op	38849894 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12028533 ns/op	38597197 B/op	  327611 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	      79	  13102909 ns/op	37781781 B/op	  327610 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12850882 ns/op	38933933 B/op	  327612 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=64_EDS=128x128-20         	     100	  12267273 ns/op	37966092 B/op	  327610 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	85.791s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	      96	  11301118 ns/op	29559580 B/op	  238077 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     105	  11244825 ns/op	29879781 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11355942 ns/op	29559496 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10614477 ns/op	29685109 B/op	  238074 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11104585 ns/op	30316602 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10822328 ns/op	29306897 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10990546 ns/op	30106296 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10948066 ns/op	29138939 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11248040 ns/op	31578412 B/op	  238077 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11474386 ns/op	30106409 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11487211 ns/op	31073391 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11291147 ns/op	30064666 B/op	  238078 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11515325 ns/op	31410360 B/op	  238077 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10859601 ns/op	27036442 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11090118 ns/op	29895844 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11219284 ns/op	29896150 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11093797 ns/op	28928749 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     105	  11470181 ns/op	29599573 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11098135 ns/op	29432952 B/op	  238074 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10667534 ns/op	28718430 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10749410 ns/op	29348692 B/op	  238073 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11104500 ns/op	29811848 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11526843 ns/op	31998626 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10411694 ns/op	28928479 B/op	  238074 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11197912 ns/op	30989310 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10944438 ns/op	29980093 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11187985 ns/op	30064271 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  10847813 ns/op	28424293 B/op	  238076 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11237477 ns/op	29643472 B/op	  238075 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=64_EDS=128x128-20         	     100	  11060145 ns/op	30106185 B/op	  238076 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	86.978s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      45	  24449057 ns/op	77997770 B/op	  583069 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      52	  25626241 ns/op	80027102 B/op	  583070 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      63	  24341386 ns/op	81465074 B/op	  583066 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      50	  24040071 ns/op	69948372 B/op	  583062 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      62	  24427486 ns/op	73900719 B/op	  583064 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      57	  25683894 ns/op	74999330 B/op	  583064 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      52	  25153810 ns/op	69360186 B/op	  583062 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      50	  23629947 ns/op	69612300 B/op	  583062 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      67	  25467968 ns/op	75349186 B/op	  583065 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      63	  25854098 ns/op	80664736 B/op	  583066 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      58	  23952402 ns/op	71605831 B/op	  583062 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      66	  24901027 ns/op	79991659 B/op	  583065 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      51	  25063851 ns/op	81512057 B/op	  583065 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      66	  24202447 ns/op	76935831 B/op	  583064 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      60	  25531310 ns/op	75662617 B/op	  583063 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      64	  24588014 ns/op	69097470 B/op	  583061 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      51	  24155087 ns/op	74756381 B/op	  583063 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      56	  26258508 ns/op	84516391 B/op	  583068 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      64	  24124639 ns/op	76581745 B/op	  583064 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=128_EDS=256x256-20         	      66	  24732094 ns/op	74771352 B/op	  583063 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	83.757s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  69954377 ns/op	418991588 B/op	 3462285 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  74926080 ns/op	466610181 B/op	 3462287 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  70799835 ns/op	430189761 B/op	 3462258 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      16	  71654269 ns/op	434464897 B/op	 3462271 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      16	  68179805 ns/op	413983312 B/op	 3462272 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      18	  72389080 ns/op	467728388 B/op	 3462279 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      13	  77641385 ns/op	445537463 B/op	 3462285 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      18	  69256599 ns/op	416373112 B/op	 3462264 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      18	  89917178 ns/op	421043311 B/op	 3462270 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      13	  82693784 ns/op	421623037 B/op	 3462287 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      13	  91860852 ns/op	419680516 B/op	 3462275 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      13	  87799409 ns/op	440369455 B/op	 3462294 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  71419204 ns/op	418430331 B/op	 3462273 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  67337991 ns/op	425710681 B/op	 3462263 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  68476428 ns/op	438599630 B/op	 3462285 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  69138978 ns/op	436353082 B/op	 3462262 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  70778302 ns/op	448123368 B/op	 3462288 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      15	  85810488 ns/op	398260756 B/op	 3462263 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      13	  80446720 ns/op	400287845 B/op	 3462272 allocs/op
+BenchmarkDatarootGeneration/NMT_k=128_EDS=256x256-20         	      14	  87578298 ns/op	434911476 B/op	 3462256 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	74.219s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      24	  46902822 ns/op	241237164 B/op	 2022677 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      26	  42929780 ns/op	230379612 B/op	 2022665 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      26	  46638426 ns/op	247833983 B/op	 2022674 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      28	  45579339 ns/op	234882240 B/op	 2022667 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      24	  43139702 ns/op	226876777 B/op	 2022658 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      27	  50938471 ns/op	252632301 B/op	 2022668 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      24	  43686389 ns/op	236681650 B/op	 2022663 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      24	  43315581 ns/op	224776050 B/op	 2022658 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      27	  43339217 ns/op	233647234 B/op	 2022663 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      28	  50296534 ns/op	255888913 B/op	 2022669 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      28	  47207854 ns/op	243284410 B/op	 2022665 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      27	  45012221 ns/op	233335573 B/op	 2022662 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      32	  46895106 ns/op	239832198 B/op	 2022662 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      28	  44308447 ns/op	234581957 B/op	 2022666 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      34	  42444062 ns/op	226424132 B/op	 2022659 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      26	  47158962 ns/op	249772485 B/op	 2022672 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      31	  45960166 ns/op	239189993 B/op	 2022668 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      36	  44831944 ns/op	241117376 B/op	 2022669 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      32	  45720173 ns/op	230904094 B/op	 2022662 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=128_EDS=256x256-20         	      22	  51993630 ns/op	230380345 B/op	 2022666 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	86.118s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      25	  42978984 ns/op	158330568 B/op	 1303586 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      34	  46999947 ns/op	152555924 B/op	 1303555 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      40	  30523800 ns/op	143992666 B/op	 1303552 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      36	  32620608 ns/op	147750618 B/op	 1303553 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      32	  35440019 ns/op	170569130 B/op	 1303565 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      33	  34401943 ns/op	154031806 B/op	 1303554 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      34	  32705202 ns/op	154039507 B/op	 1303555 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      50	  33228708 ns/op	148909455 B/op	 1303557 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      37	  35302961 ns/op	164507935 B/op	 1303561 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      31	  35671151 ns/op	159165659 B/op	 1303555 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      50	  35775520 ns/op	167732224 B/op	 1303560 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      40	  35120725 ns/op	153026219 B/op	 1303556 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      50	  33944516 ns/op	153109603 B/op	 1303553 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      50	  33102117 ns/op	152773645 B/op	 1303552 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      49	  33240056 ns/op	150169596 B/op	 1303550 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      33	  34845885 ns/op	167020528 B/op	 1303566 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      32	  37408875 ns/op	175294344 B/op	 1303558 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      39	  31825765 ns/op	144375982 B/op	 1303555 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      49	  34471653 ns/op	151541406 B/op	 1303549 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=128_EDS=256x256-20         	      32	  35232886 ns/op	166102562 B/op	 1303554 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	94.443s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      37	  31331217 ns/op	120810391 B/op	  944267 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      50	  28625690 ns/op	109581410 B/op	  944261 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      43	  30619136 ns/op	121531685 B/op	  944256 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      51	  28605072 ns/op	116519710 B/op	  944255 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      42	  30930666 ns/op	126994372 B/op	  944257 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      42	  32077854 ns/op	128395870 B/op	  944261 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      54	  28953830 ns/op	112456056 B/op	  944256 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      48	  27759664 ns/op	109187631 B/op	  944253 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      51	  30333244 ns/op	127888617 B/op	  944257 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      55	  28669333 ns/op	110588138 B/op	  944255 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      39	  30497943 ns/op	137737535 B/op	  944262 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      56	  27846719 ns/op	109387187 B/op	  944252 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      46	  28098597 ns/op	108943538 B/op	  944251 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      56	  28557575 ns/op	113139898 B/op	  944257 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      55	  29662368 ns/op	120979435 B/op	  944263 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      55	  29414333 ns/op	113031771 B/op	  944250 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      57	  28313499 ns/op	115896940 B/op	  944260 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      52	  28405242 ns/op	107035930 B/op	  944264 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      55	  27839042 ns/op	106463893 B/op	  944255 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=128_EDS=256x256-20         	      38	  29789996 ns/op	115232486 B/op	  944257 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	103.363s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      13	  86331158 ns/op	236690093 B/op	 2312488 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      13	  82514697 ns/op	237738768 B/op	 2312503 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      12	  83756144 ns/op	237219188 B/op	 2312486 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      13	  83375323 ns/op	237126985 B/op	 2312493 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      14	  84113335 ns/op	236599792 B/op	 2312476 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      14	  83678982 ns/op	236335994 B/op	 2312472 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      13	  87117069 ns/op	237213635 B/op	 2312488 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      13	  82933761 ns/op	237213634 B/op	 2312486 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      12	  84736850 ns/op	238804692 B/op	 2312499 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      14	  82427426 ns/op	236134162 B/op	 2312476 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      13	  83511248 ns/op	237169826 B/op	 2312485 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      14	  81700679 ns/op	236133303 B/op	 2312472 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      13	  84988085 ns/op	236624092 B/op	 2312483 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      14	  84687634 ns/op	237452094 B/op	 2312487 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=256_EDS=512x512-20         	      14	  83544380 ns/op	236843402 B/op	 2312481 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	56.182s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       4	 300717774 ns/op	1413973822 B/op	13839931 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       4	 299709922 ns/op	1410918824 B/op	13839888 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       4	 302704538 ns/op	1416239672 B/op	13839922 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 372791829 ns/op	1411384490 B/op	13839979 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 346361819 ns/op	1416768680 B/op	13839955 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 340054198 ns/op	1411861930 B/op	13839992 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 361225076 ns/op	1414697432 B/op	13840032 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 333441038 ns/op	1412499504 B/op	13839917 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 360457838 ns/op	1414304765 B/op	13839940 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 349008458 ns/op	1412523133 B/op	13840013 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       4	 298477446 ns/op	1411423408 B/op	13839921 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       4	 299542874 ns/op	1411862374 B/op	13839972 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       4	 313328504 ns/op	1412912434 B/op	13839944 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       4	 359502499 ns/op	1411337014 B/op	13839892 allocs/op
+BenchmarkDatarootGeneration/NMT_k=256_EDS=512x512-20         	       3	 342377754 ns/op	1412609781 B/op	13839944 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	65.129s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       5	 210337035 ns/op	824353707 B/op	 8076201 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 192711991 ns/op	826206206 B/op	 8076231 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 192379112 ns/op	826021009 B/op	 8076265 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       7	 183898717 ns/op	823872058 B/op	 8076205 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 186137630 ns/op	824314318 B/op	 8076234 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       7	 186351428 ns/op	824035730 B/op	 8076215 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       7	 186674726 ns/op	823544718 B/op	 8076186 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 190017728 ns/op	823884596 B/op	 8076210 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 193375564 ns/op	826391546 B/op	 8076219 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 181726847 ns/op	824161757 B/op	 8076194 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 188188582 ns/op	825821968 B/op	 8076206 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 193471386 ns/op	824356904 B/op	 8076194 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 193167260 ns/op	824123740 B/op	 8076231 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 185101096 ns/op	824167357 B/op	 8076196 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=256_EDS=512x512-20         	       6	 185685753 ns/op	825398117 B/op	 8076212 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	56.221s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       8	 137169422 ns/op	533840180 B/op	 5196429 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       8	 131557722 ns/op	533765388 B/op	 5196425 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       8	 131659587 ns/op	534618163 B/op	 5196433 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       8	 134929222 ns/op	535221295 B/op	 5196440 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 128082557 ns/op	533682959 B/op	 5196408 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 133251004 ns/op	533712267 B/op	 5196400 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 128357644 ns/op	533687535 B/op	 5196422 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 133774689 ns/op	533688537 B/op	 5196430 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       8	 137793754 ns/op	533758164 B/op	 5196403 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 127075199 ns/op	533684089 B/op	 5196414 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 129224415 ns/op	533685753 B/op	 5196425 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       8	 127183763 ns/op	534691503 B/op	 5196443 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 134840507 ns/op	533686788 B/op	 5196423 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 132397982 ns/op	533684310 B/op	 5196413 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=256_EDS=512x512-20         	       9	 134144367 ns/op	533781951 B/op	 5196424 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	68.928s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	       9	 111614211 ns/op	396371358 B/op	 3757537 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      12	 108293396 ns/op	394161167 B/op	 3757452 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 107462882 ns/op	394996056 B/op	 3757451 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 107172716 ns/op	395170006 B/op	 3757470 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 105309938 ns/op	394255736 B/op	 3757436 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 110104340 ns/op	394067064 B/op	 3757475 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      12	 110992841 ns/op	394923567 B/op	 3757492 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 112523518 ns/op	396730459 B/op	 3757475 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 106148483 ns/op	394714124 B/op	 3757459 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 107490074 ns/op	394654940 B/op	 3757450 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 110818623 ns/op	394118524 B/op	 3757455 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 108198140 ns/op	395087478 B/op	 3757475 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 111034718 ns/op	394574321 B/op	 3757464 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 107607184 ns/op	394150161 B/op	 3757464 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=256_EDS=512x512-20         	      10	 109492128 ns/op	394887448 B/op	 3757469 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	73.212s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 369902094 ns/op	1025658421 B/op	 9216665 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 363765377 ns/op	1018747880 B/op	 9216628 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 359057499 ns/op	1018375749 B/op	 9216636 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 353631376 ns/op	1016506437 B/op	 9216593 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 362125906 ns/op	1014453424 B/op	 9216579 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 392005226 ns/op	1013335138 B/op	 9216595 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 355615014 ns/op	1016693786 B/op	 9216601 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 363422999 ns/op	1015948130 B/op	 9216614 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 370535317 ns/op	1017066021 B/op	 9216593 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=512_EDS=1024x1024-20         	       3	 358173369 ns/op	1015201770 B/op	 9216602 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	64.127s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1504083157 ns/op	6293251888 B/op	55355792 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1320376362 ns/op	5646838840 B/op	55344866 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1242798752 ns/op	5650111888 B/op	55344498 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1168066851 ns/op	5662392928 B/op	55344465 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1194029906 ns/op	5659222688 B/op	55345363 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1228670311 ns/op	5656286064 B/op	55344615 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1247416539 ns/op	5647945296 B/op	55344541 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1298311010 ns/op	5656904360 B/op	55345100 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1244282367 ns/op	5659103616 B/op	55344689 allocs/op
+BenchmarkDatarootGeneration/NMT_k=512_EDS=1024x1024-20         	       1	1203556302 ns/op	5651315456 B/op	55344751 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	24.756s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 833885422 ns/op	3339601072 B/op	32280854 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 780595404 ns/op	3337333660 B/op	32280583 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 788408799 ns/op	3335371380 B/op	32280586 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 835498038 ns/op	3346278452 B/op	32280595 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 780705343 ns/op	3333393564 B/op	32280489 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 798886636 ns/op	3333134276 B/op	32280560 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 804256088 ns/op	3333391988 B/op	32280550 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 767560630 ns/op	3334218504 B/op	32280456 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 774111278 ns/op	3332907656 B/op	32281056 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=512_EDS=1024x1024-20         	       2	 784664890 ns/op	3334519460 B/op	32280519 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	57.877s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 634059538 ns/op	2205472252 B/op	20755041 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 582662672 ns/op	2205738476 B/op	20754935 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 584586377 ns/op	2200958804 B/op	20754852 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 653833469 ns/op	2224201016 B/op	20754994 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 588385744 ns/op	2204879708 B/op	20754862 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 563766038 ns/op	2206899720 B/op	20755223 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 611666976 ns/op	2202657176 B/op	20754994 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 627370149 ns/op	2201562764 B/op	20755017 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 564490590 ns/op	2203756008 B/op	20754907 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=512_EDS=1024x1024-20         	       2	 580989502 ns/op	2202098572 B/op	20754951 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	51.585s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       2	 542102151 ns/op	1651527216 B/op	14993911 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       3	 490768031 ns/op	1639227608 B/op	14993968 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       3	 478836153 ns/op	1632332493 B/op	14993933 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       2	 504303333 ns/op	1642313576 B/op	14993993 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       3	 486521934 ns/op	1633994533 B/op	14993868 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       2	 502672426 ns/op	1648728608 B/op	14993937 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       2	 501311134 ns/op	1641460432 B/op	14993926 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       2	 505931936 ns/op	1636992928 B/op	14993936 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       2	 509105894 ns/op	1639787688 B/op	14993946 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=512_EDS=1024x1024-20         	       2	 517083975 ns/op	1637539096 B/op	14993908 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	62.510s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/MerkleTree_k=1024_EDS=2048x2048-20         	       1	1961578322 ns/op	6259834680 B/op	36808451 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=1024_EDS=2048x2048-20         	       1	1607809094 ns/op	3946749160 B/op	36788236 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=1024_EDS=2048x2048-20         	       1	1568448565 ns/op	3959951320 B/op	36787800 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=1024_EDS=2048x2048-20         	       1	1679950887 ns/op	3962179424 B/op	36787970 allocs/op
+BenchmarkDatarootGeneration/MerkleTree_k=1024_EDS=2048x2048-20         	       1	1593930855 ns/op	3945533728 B/op	36787376 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	22.727s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/NMT_k=1024_EDS=2048x2048-20         	       1	5439509124 ns/op	24795514568 B/op	221347073 allocs/op
+BenchmarkDatarootGeneration/NMT_k=1024_EDS=2048x2048-20         	       1	5300959834 ns/op	22491119936 B/op	221326428 allocs/op
+BenchmarkDatarootGeneration/NMT_k=1024_EDS=2048x2048-20         	       1	5281184641 ns/op	22470102536 B/op	221325796 allocs/op
+BenchmarkDatarootGeneration/NMT_k=1024_EDS=2048x2048-20         	       1	4872879977 ns/op	22482200056 B/op	221325644 allocs/op
+BenchmarkDatarootGeneration/NMT_k=1024_EDS=2048x2048-20         	       1	4866108852 ns/op	22466779736 B/op	221325885 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	50.007s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage1_k=1024_EDS=2048x2048-20         	       1	3638938047 ns/op	15538296088 B/op	129078198 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=1024_EDS=2048x2048-20         	       1	3202061108 ns/op	13191735320 B/op	129056399 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=1024_EDS=2048x2048-20         	       1	3235332288 ns/op	13211721032 B/op	129056867 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=1024_EDS=2048x2048-20         	       1	3181795350 ns/op	13203991640 B/op	129056750 allocs/op
+BenchmarkDatarootGeneration/Stage1_k=1024_EDS=2048x2048-20         	       1	3234230225 ns/op	13213775032 B/op	129056107 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	40.534s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage2_k=1024_EDS=2048x2048-20         	       1	2606205354 ns/op	10974587144 B/op	82958109 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=1024_EDS=2048x2048-20         	       1	2464035548 ns/op	8649834680 B/op	82938368 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=1024_EDS=2048x2048-20         	       1	2436543561 ns/op	8663906952 B/op	82937779 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=1024_EDS=2048x2048-20         	       1	2463565033 ns/op	8661706120 B/op	82937842 allocs/op
+BenchmarkDatarootGeneration/Stage2_k=1024_EDS=2048x2048-20         	       1	2340289909 ns/op	8657237288 B/op	82937927 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	35.783s
+goos: linux
+goarch: amd64
+pkg: github.com/celestiaorg/rsmt2d
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkDatarootGeneration/Stage3_k=1024_EDS=2048x2048-20         	       1	2265729927 ns/op	8764824056 B/op	59902925 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=1024_EDS=2048x2048-20         	       1	2042015060 ns/op	6457359192 B/op	59884752 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=1024_EDS=2048x2048-20         	       1	2017584990 ns/op	6451193528 B/op	59883353 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=1024_EDS=2048x2048-20         	       1	2094797057 ns/op	6454435144 B/op	59882996 allocs/op
+BenchmarkDatarootGeneration/Stage3_k=1024_EDS=2048x2048-20         	       1	2143174440 ns/op	6437832120 B/op	59882912 allocs/op
+PASS
+ok  	github.com/celestiaorg/rsmt2d	33.645s

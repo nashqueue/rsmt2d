@@ -8,6 +8,28 @@ import statistics
 from datetime import datetime
 import os
 
+def get_adaptive_iterations(k, base_count=1):
+    """Get adaptive iteration count based on k value for better statistical confidence"""
+    if base_count > 1:
+        # If user specifies iterations, use that as minimum
+        return base_count
+    
+    # Adaptive iterations: more for small k, fewer for large k
+    if k <= 32:
+        return 50
+    elif k <= 64:
+        return 30
+    elif k <= 128:
+        return 20
+    elif k <= 256:
+        return 15
+    elif k <= 512:
+        return 10
+    elif k <= 1024:
+        return 5
+    else:
+        return 3
+
 def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
     """Run the benchmark suite and return the results file path"""
     # Create k-value specific benchmark regex
@@ -18,12 +40,17 @@ def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
         print(f"No valid k values <= {max_k}")
         return None
     
-    # Better time estimation based on k-value complexity
-    time_estimates = {32: 0.02, 64: 0.17, 128: 1, 256: 5, 512: 20, 1024: 60, 2048: 240}  # minutes per run
-    estimated_minutes = sum(time_estimates.get(k, k/4) for k in selected_k) * count
+    # Calculate adaptive iterations for each k
+    k_iterations = {k: get_adaptive_iterations(k, count) for k in selected_k}
     
-    print(f"🚀 Starting benchmark run with {count} iterations")
-    print(f"📊 Testing k values: {selected_k}")
+    # Better time estimation based on k-value complexity and iterations
+    time_estimates = {32: 0.02, 64: 0.17, 128: 1, 256: 5, 512: 20, 1024: 60, 2048: 240}  # minutes per run
+    estimated_minutes = sum(time_estimates.get(k, k/4) * k_iterations[k] for k in selected_k)
+    
+    print(f"🚀 Starting benchmark run with adaptive iterations")
+    print(f"📊 Testing k values with iterations:")
+    for k in selected_k:
+        print(f"    k={k}: {k_iterations[k]} iterations")
     print(f"⏱️  Estimated time: {estimated_minutes:.1f} minutes ({estimated_minutes/60:.1f} hours)")
     print()
     
@@ -41,15 +68,16 @@ def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
                 
                 for tree_type in tree_types:
                     current_combo += 1
-                    print(f"   🌳 {tree_type} ({current_combo}/{total_combinations})...", end=" ", flush=True)
+                    iterations_for_k = k_iterations[k]
+                    print(f"   🌳 {tree_type} ({current_combo}/{total_combinations}) [{iterations_for_k} runs]...", end=" ", flush=True)
                     
-                    # Run specific tree type for this k value
+                    # Run specific tree type for this k value with adaptive iterations
                     bench_pattern = f"BenchmarkDatarootGeneration/{tree_type}_k={k}_"
                     cmd = [
                         "go", "test", 
                         f"-bench={bench_pattern}", 
                         "-benchmem", 
-                        f"-count={count}",
+                        f"-count={iterations_for_k}",
                         f"-timeout={timeout_minutes}m"
                     ]
                     
@@ -135,9 +163,19 @@ def calculate_averages(data):
             memories = [m['memory_bytes'] for m in measurements]
             allocs = [m['allocs'] for m in measurements]
             
+            # Calculate both mean and median for better statistical insight
+            time_mean = statistics.mean(times) / 1_000_000
+            time_median = statistics.median(times) / 1_000_000
+            time_std = statistics.stdev(times) / 1_000_000 if len(times) > 1 else 0
+            
+            # Calculate coefficient of variation (relative standard deviation)
+            cv = (time_std / time_mean * 100) if time_mean > 0 else 0
+            
             averages[(k_value, approach)] = {
-                'time_ms': statistics.mean(times) / 1_000_000,
-                'time_std': statistics.stdev(times) / 1_000_000 if len(times) > 1 else 0,
+                'time_ms': time_mean,
+                'time_median': time_median,
+                'time_std': time_std,
+                'cv': cv,  # Coefficient of variation as percentage
                 'memory_mb': statistics.mean(memories) / (1024 * 1024),
                 'allocs': statistics.mean(allocs),
                 'count': len(measurements)
@@ -224,8 +262,8 @@ Q2 | Q3    (Column parity | Intersection parity)
         
         for k in k_values:
             f.write(f"### K={k} (EDS {k*2}×{k*2}):\n\n")
-            f.write("| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | Description |\n")
-            f.write("|----------|-----------|-----------------|-------------|------|-------------|\n")
+            f.write("| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |\n")
+            f.write("|----------|-----------|-----------------|-------------|------|-----|-------------|\n")
             
             nmt_time = None
             for approach in approaches:
@@ -253,9 +291,17 @@ Q2 | Q3    (Column parity | Intersection parity)
                         'MerkleTree': 'All trees use Merkle'
                     }
                     
-                    time_str = f"{time_ms:.0f}" + (f" ±{std:.0f}" if count > 1 and std > 0 else "")
+                    # Show median if significantly different from mean (high variance)
+                    median = data.get('time_median', time_ms)
+                    cv = data.get('cv', 0)
                     
-                    f.write(f"| {approach} | {time_str} | {speedup} | {memory_mb:.0f} | {count} | {descriptions.get(approach, '')} |\n")
+                    if cv > 20:  # High variance threshold
+                        time_str = f"{time_ms:.0f}(μ)/{median:.0f}(M) ±{std:.0f}"
+                    else:
+                        time_str = f"{time_ms:.0f}" + (f" ±{std:.0f}" if count > 1 and std > 0 else "")
+                    
+                    cv_str = f"{data.get('cv', 0):.1f}%" if data.get('cv', 0) > 0 else "N/A"
+                    f.write(f"| {approach} | {time_str} | {speedup} | {memory_mb:.0f} | {count} | {cv_str} | {descriptions.get(approach, '')} |\n")
             
             f.write("\n")
         
@@ -290,7 +336,9 @@ Q2 | Q3    (Column parity | Intersection parity)
 ### Methodology
 
 - **Environment**: Go benchmark framework with `-benchmem` flag
-- **Iterations**: {count} runs per test for statistical reliability
+- **Iterations**: Adaptive per k-value (50 for k=32, down to 3-5 for k=2048)
+- **Statistics**: Mean (μ), Median (M), Standard Deviation, CV% (Coefficient of Variation)
+- **High Variance**: When CV% > 20%, both mean and median shown as "mean(μ)/median(M)"
 - **Timeout**: Extended timeout for large EDS sizes
 - **Validation**: Multiple measurement points for consistency
 
