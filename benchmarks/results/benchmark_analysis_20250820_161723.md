@@ -1,87 +1,67 @@
-# EDS Dataroot Generation Benchmark Analysis
+# Benchmark Results
 
 **Generated:** 2025-08-20 16:17:23  
-**Benchmark Runs:** 1 iterations per test  
-**Source Data:** benchmark_results_20250820_153611.txt
-
-## Executive Summary
-
-This report analyzes the performance of different tree construction approaches for Extended Data Square (EDS) dataroot generation across various sizes.
-
-## EDS Quadrant Layout Reference
-
-```
-Q0 | Q1    (Original data | Row parity)
----+---
-Q2 | Q3    (Column parity | Intersection parity)  
-```
-
-**Stage Optimizations:**
-- **Stage 1**: Merkle columns, NMT rows
-- **Stage 2**: + Merkle for Q2/Q3 row roots (bottom half)
-- **Stage 3**: + Hybrid row trees (Merkle for Q1, NMT for Q0)
-
-## Performance Results
+**Source:** benchmark_results_20250820_153611.txt
 
 ### K=32 (EDS 64×64):
 
-| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |
-|----------|-----------|-----------------|-------------|------|-----|-------------|
-| NMT | 6 ±0 | 1.00× | 23 | 50 | 3.0% | All trees use NMT |
-| Stage1 | 5 ±0 | 1.31× | 14 | 50 | 3.2% | Merkle columns, NMT rows |
-| Stage2 | 4 ±0 | 1.50× | 9 | 50 | 3.5% | + Merkle for Q2/Q3 rows |
-| Stage3 | 4 ±0 | 1.63× | 7 | 50 | 2.8% | + Hybrid row trees (Q0:NMT, Q1:Merkle) |
-| MerkleTree | 3 ±0 | 1.89× | 4 | 50 | 1.4% | All trees use Merkle |
+| Approach | Time (ms) | Speedup | Memory (MB) | Runs | CV% |
+|----------|-----------|---------|-------------|------|-----|
+| NMT | 6 ±0 | 1.00× | 23 | 50 | 3.0% |
+| Stage1 | 5 ±0 | 1.31× | 14 | 50 | 3.2% |
+| Stage2 | 4 ±0 | 1.50× | 9 | 50 | 3.5% |
+| Stage3 | 4 ±0 | 1.63× | 7 | 50 | 2.8% |
+| MerkleTree | 3 ±0 | 1.89× | 4 | 50 | 1.4% |
 
 ### K=64 (EDS 128×128):
 
-| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |
-|----------|-----------|-----------------|-------------|------|-----|-------------|
-| NMT | 19 ±1 | 1.00× | 96 | 30 | 5.7% | All trees use NMT |
-| Stage1 | 14 ±1 | 1.35× | 54 | 30 | 6.3% | Merkle columns, NMT rows |
-| Stage2 | 12 ±0 | 1.52× | 37 | 30 | 2.8% | + Merkle for Q2/Q3 rows |
-| Stage3 | 11 ±0 | 1.68× | 28 | 30 | 2.5% | + Hybrid row trees (Q0:NMT, Q1:Merkle) |
-| MerkleTree | 9 ±0 | 2.02× | 18 | 30 | 2.2% | All trees use Merkle |
+| Approach | Time (ms) | Speedup | Memory (MB) | Runs | CV% |
+|----------|-----------|---------|-------------|------|-----|
+| NMT | 19 ±1 | 1.00× | 96 | 30 | 5.7% |
+| Stage1 | 14 ±1 | 1.35× | 54 | 30 | 6.3% |
+| Stage2 | 12 ±0 | 1.52× | 37 | 30 | 2.8% |
+| Stage3 | 11 ±0 | 1.68× | 28 | 30 | 2.5% |
+| MerkleTree | 9 ±0 | 2.02× | 18 | 30 | 2.2% |
 
 ### K=128 (EDS 256×256):
 
-| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |
-|----------|-----------|-----------------|-------------|------|-----|-------------|
-| NMT | 76 ±8 | 1.00× | 410 | 20 | 10.9% | All trees use NMT |
-| Stage1 | 46 ±3 | 1.66× | 227 | 20 | 5.9% | Merkle columns, NMT rows |
-| Stage2 | 35 ±4 | 2.17× | 149 | 20 | 10.6% | + Merkle for Q2/Q3 rows |
-| Stage3 | 29 ±1 | 2.61× | 111 | 20 | 4.4% | + Hybrid row trees (Q0:NMT, Q1:Merkle) |
-| MerkleTree | 25 ±1 | 3.08× | 72 | 20 | 3.0% | All trees use Merkle |
+| Approach | Time (ms) | Speedup | Memory (MB) | Runs | CV% |
+|----------|-----------|---------|-------------|------|-----|
+| NMT | 76 ±8 | 1.00× | 410 | 20 | 10.9% |
+| Stage1 | 46 ±3 | 1.66× | 227 | 20 | 5.9% |
+| Stage2 | 35 ±4 | 2.17× | 149 | 20 | 10.6% |
+| Stage3 | 29 ±1 | 2.61× | 111 | 20 | 4.4% |
+| MerkleTree | 25 ±1 | 3.08× | 72 | 20 | 3.0% |
 
 ### K=256 (EDS 512×512):
 
-| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |
-|----------|-----------|-----------------|-------------|------|-----|-------------|
-| NMT | 332 ±27 | 1.00× | 1348 | 15 | 8.1% | All trees use NMT |
-| Stage1 | 190 ±7 | 1.75× | 787 | 15 | 3.6% | Merkle columns, NMT rows |
-| Stage2 | 132 ±3 | 2.51× | 509 | 15 | 2.6% | + Merkle for Q2/Q3 rows |
-| Stage3 | 109 ±2 | 3.05× | 377 | 15 | 2.0% | + Hybrid row trees (Q0:NMT, Q1:Merkle) |
-| MerkleTree | 84 ±1 | 3.95× | 226 | 15 | 1.7% | All trees use Merkle |
+| Approach | Time (ms) | Speedup | Memory (MB) | Runs | CV% |
+|----------|-----------|---------|-------------|------|-----|
+| NMT | 332 ±27 | 1.00× | 1348 | 15 | 8.1% |
+| Stage1 | 190 ±7 | 1.75× | 787 | 15 | 3.6% |
+| Stage2 | 132 ±3 | 2.51× | 509 | 15 | 2.6% |
+| Stage3 | 109 ±2 | 3.05× | 377 | 15 | 2.0% |
+| MerkleTree | 84 ±1 | 3.95× | 226 | 15 | 1.7% |
 
 ### K=512 (EDS 1024×1024):
 
-| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |
-|----------|-----------|-----------------|-------------|------|-----|-------------|
-| NMT | 1265 ±96 | 1.00× | 5453 | 10 | 7.5% | All trees use NMT |
-| Stage1 | 795 ±24 | 1.59× | 3181 | 10 | 3.0% | Merkle columns, NMT rows |
-| Stage2 | 599 ±31 | 2.11× | 2104 | 10 | 5.1% | + Merkle for Q2/Q3 rows |
-| Stage3 | 504 ±18 | 2.51× | 1564 | 10 | 3.5% | + Hybrid row trees (Q0:NMT, Q1:Merkle) |
-| MerkleTree | 365 ±11 | 3.47× | 970 | 10 | 3.0% | All trees use Merkle |
+| Approach | Time (ms) | Speedup | Memory (MB) | Runs | CV% |
+|----------|-----------|---------|-------------|------|-----|
+| NMT | 1265 ±96 | 1.00× | 5453 | 10 | 7.5% |
+| Stage1 | 795 ±24 | 1.59× | 3181 | 10 | 3.0% |
+| Stage2 | 599 ±31 | 2.11× | 2104 | 10 | 5.1% |
+| Stage3 | 504 ±18 | 2.51× | 1564 | 10 | 3.5% |
+| MerkleTree | 365 ±11 | 3.47× | 970 | 10 | 3.0% |
 
 ### K=1024 (EDS 2048×2048):
 
-| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |
-|----------|-----------|-----------------|-------------|------|-----|-------------|
-| NMT | 5152 ±265 | 1.00× | 21878 | 5 | 5.1% | All trees use NMT |
-| Stage1 | 3298 ±192 | 1.56× | 13039 | 5 | 5.8% | Merkle columns, NMT rows |
-| Stage2 | 2462 ±95 | 2.09× | 8699 | 5 | 3.9% | + Merkle for Q2/Q3 rows |
-| Stage3 | 2113 ±98 | 2.44× | 6593 | 5 | 4.7% | + Hybrid row trees (Q0:NMT, Q1:Merkle) |
-| MerkleTree | 1682 ±161 | 3.06× | 4210 | 5 | 9.6% | All trees use Merkle |
+| Approach | Time (ms) | Speedup | Memory (MB) | Runs | CV% |
+|----------|-----------|---------|-------------|------|-----|
+| NMT | 5152 ±265 | 1.00× | 21878 | 5 | 5.1% |
+| Stage1 | 3298 ±192 | 1.56× | 13039 | 5 | 5.8% |
+| Stage2 | 2462 ±95 | 2.09× | 8699 | 5 | 3.9% |
+| Stage3 | 2113 ±98 | 2.44× | 6593 | 5 | 4.7% |
+| MerkleTree | 1682 ±161 | 3.06× | 4210 | 5 | 9.6% |
 
 ## Performance Visualization
 
@@ -136,28 +116,4 @@ Stage3    : ████████████████                    
 MerkleTree: █████████████                              1682ms (3.06x faster)
 ```
 
-## Analysis
 
-### Stage 3 Scaling Analysis
-
-Stage 3 performance vs NMT baseline:
-- K=32: 1.63× faster than NMT
-- K=64: 1.68× faster than NMT
-- K=128: 2.61× faster than NMT
-- K=256: 3.05× faster than NMT
-- K=512: 2.51× faster than NMT
-- K=1024: 2.44× faster than NMT
-
-**Scaling Trend**: Stage 3 efficiency is improving with larger EDS sizes.
-
-### Methodology
-
-- **Environment**: Go benchmark framework with `-benchmem` flag
-- **Iterations**: Adaptive per k-value (50 for k=32, down to 3-5 for k=2048)
-- **Statistics**: Mean (μ), Median (M), Standard Deviation, CV% (Coefficient of Variation)
-- **High Variance**: When CV% > 20%, both mean and median shown as "mean(μ)/median(M)"
-- **Timeout**: Extended timeout for large EDS sizes
-- **Validation**: Multiple measurement points for consistency
-
----
-*Generated by automated benchmark analysis pipeline*

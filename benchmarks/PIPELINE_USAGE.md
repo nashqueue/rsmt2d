@@ -1,77 +1,62 @@
-# Automated Benchmark Analysis Pipeline
+# Benchmark Pipeline
 
 ## Quick Start
 
 ```bash
-# Test pipeline with k=64 max (fast)
-python3 generate_analysis_report.py 1 10 64
+# Run with defaults (up to k=1024, 360 min timeout)
+python3 benchmark.py
 
-# Full pipeline up to k=1024 (60 minutes)  
-python3 generate_analysis_report.py 1 60 1024
+# Test up to k=64 (fast, ~10 minutes)
+python3 benchmark.py 30 64
 
-# Full pipeline up to k=2048 (4+ hours)
-python3 generate_analysis_report.py 1 300 2048
+# Full run up to k=1024 (~10 hours)  
+python3 benchmark.py 360 1024
+
+# Extended run up to k=2048 (~15 hours)
+python3 benchmark.py 900 2048
 ```
 
 ## Usage
 
 ```bash
-python3 generate_analysis_report.py <runs> [timeout_minutes] [max_k]
+python3 benchmark.py [timeout_minutes] [max_k]
 ```
 
 **Parameters:**
-- `runs`: Number of benchmark iterations (1-10 recommended)
-- `timeout_minutes`: Timeout in minutes (default: 180)
-- `max_k`: Maximum k value to test (default: 2048)
-  - k=32: ~1 second
-  - k=64: ~10 seconds  
-  - k=128: ~1 minute
-  - k=256: ~5 minutes
-  - k=512: ~20 minutes
-  - k=1024: ~60 minutes
-  - k=2048: ~4+ hours
+- `timeout_minutes`: Timeout in minutes (default: 360)
+- `max_k`: Maximum k value to test (default: 1024)
 
-## What It Does
+## Adaptive Iterations
 
-1. **Runs Benchmarks**: Executes Go benchmarks for all stages up to max_k
-2. **Parses Results**: Extracts performance data from benchmark output
-3. **Generates Report**: Creates comprehensive Markdown analysis with:
-   - Performance tables for each k value
-   - ASCII bar charts
-   - Scaling analysis
-   - Key findings
-   - Implementation details
+The pipeline automatically uses more iterations for smaller k values to ensure statistical reliability:
+
+| k Value | Iterations | Approx. Time |
+|---------|------------|--------------|
+| k≤32    | 50         | ~2 minutes   |
+| k≤64    | 30         | ~5 minutes   |
+| k≤128   | 20         | ~20 minutes  |
+| k≤256   | 15         | ~75 minutes  |
+| k≤512   | 10         | ~200 minutes |
+| k≤1024  | 5          | ~300 minutes |
+| k>1024  | 3          | ~720 minutes |
 
 ## Output Files
 
-- `benchmark_results_YYYYMMDD_HHMMSS.txt` - Raw benchmark data
-- `benchmark_analysis_YYYYMMDD_HHMMSS.md` - Complete analysis report
+- `results/benchmark_results_YYYYMMDD_HHMMSS.txt` - Raw benchmark data
+- `results/benchmark_analysis_YYYYMMDD_HHMMSS.md` - Analysis report with performance tables and visualizations
 
-## Examples
+## What It Measures
 
-**Quick test (2 minutes):**
-```bash
-python3 generate_analysis_report.py 1 10 64
-```
+The pipeline benchmarks different tree construction approaches for Extended Data Square (EDS) generation:
 
-**Full single run up to k=1024 (60 minutes):**
-```bash
-python3 generate_analysis_report.py 1 60 1024  
-```
+- **NMT**: Namespaced Merkle Trees (baseline)
+- **Stage1**: Merkle columns, NMT rows
+- **Stage2**: Stage1 + Merkle for bottom half rows
+- **Stage3**: Stage2 + hybrid row trees
+- **MerkleTree**: Pure Merkle trees (fastest)
 
-**Full single run up to k=2048 (4+ hours):**
-```bash
-python3 generate_analysis_report.py 1 300 2048
-```
-
-**Production analysis up to k=1024 (6+ hours):**
-```bash
-python3 generate_analysis_report.py 10 360 1024
-```
-
-**Production analysis up to k=2048 (40+ hours):**
-```bash
-python3 generate_analysis_report.py 10 2400 2048
-```
-
-The pipeline automatically handles benchmark execution, data parsing, statistical analysis, and report generation - no manual intervention required!
+Each approach is measured for:
+- Execution time (ms)
+- Memory usage (MB)
+- Speedup vs NMT baseline
+- Statistical variance (CV%)

@@ -8,12 +8,8 @@ import statistics
 from datetime import datetime
 import os
 
-def get_adaptive_iterations(k, base_count=1):
+def get_adaptive_iterations(k):
     """Get adaptive iteration count based on k value for better statistical confidence"""
-    if base_count > 1:
-        # If user specifies iterations, use that as minimum
-        return base_count
-    
     # Adaptive iterations: more for small k, fewer for large k
     if k <= 32:
         return 50
@@ -30,7 +26,7 @@ def get_adaptive_iterations(k, base_count=1):
     else:
         return 3
 
-def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
+def run_benchmarks(timeout_minutes=360, max_k=1024):
     """Run the benchmark suite and return the results file path"""
     # Create k-value specific benchmark regex
     k_values = [32, 64, 128, 256, 512, 1024, 2048]
@@ -41,17 +37,17 @@ def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
         return None
     
     # Calculate adaptive iterations for each k
-    k_iterations = {k: get_adaptive_iterations(k, count) for k in selected_k}
+    k_iterations = {k: get_adaptive_iterations(k) for k in selected_k}
     
     # Better time estimation based on k-value complexity and iterations
     time_estimates = {32: 0.02, 64: 0.17, 128: 1, 256: 5, 512: 20, 1024: 60, 2048: 240}  # minutes per run
     estimated_minutes = sum(time_estimates.get(k, k/4) * k_iterations[k] for k in selected_k)
     
-    print(f"🚀 Starting benchmark run with adaptive iterations")
-    print(f"📊 Testing k values with iterations:")
+    print(f"Starting benchmark run with adaptive iterations")
+    print(f"Testing k values with iterations:")
     for k in selected_k:
         print(f"    k={k}: {k_iterations[k]} iterations")
-    print(f"⏱️  Estimated time: {estimated_minutes:.1f} minutes ({estimated_minutes/60:.1f} hours)")
+    print(f"Estimated time: {estimated_minutes:.1f} minutes ({estimated_minutes/60:.1f} hours)")
     print()
     
     results_file = f"results/benchmark_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
@@ -64,12 +60,12 @@ def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
     try:
         with open(results_file, 'w') as f:
             for k in selected_k:
-                print(f"📊 Starting k={k} benchmarks...")
+                print(f"Starting k={k} benchmarks...")
                 
                 for tree_type in tree_types:
                     current_combo += 1
                     iterations_for_k = k_iterations[k]
-                    print(f"   🌳 {tree_type} ({current_combo}/{total_combinations}) [{iterations_for_k} runs]...", end=" ", flush=True)
+                    print(f"   {tree_type} ({current_combo}/{total_combinations}) [{iterations_for_k} runs]...", end=" ", flush=True)
                     
                     # Run specific tree type for this k value with adaptive iterations
                     bench_pattern = f"BenchmarkDatarootGeneration/{tree_type}_k={k}_"
@@ -85,8 +81,8 @@ def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
                                           text=True, timeout=timeout_minutes*60, cwd="..")
                     
                     if result.returncode != 0:
-                        print(f"❌ FAILED")
-                        print(f"🔍 Error details for {tree_type} k={k}:")
+                        print(f"FAILED")
+                        print(f"Error details for {tree_type} k={k}:")
                         print("=" * 60)
                         print(result.stdout)
                         print("=" * 60)
@@ -100,18 +96,18 @@ def run_benchmarks(count=1, timeout_minutes=180, max_k=2048):
                     # Count completed benchmarks for this tree type
                     benchmark_lines = [line for line in result.stdout.split('\n') if 'BenchmarkDatarootGeneration' in line and 'ns/op' in line]
                     
-                    print(f"✅ {len(benchmark_lines)} runs")
+                    print(f"OK ({len(benchmark_lines)} runs)")
                 
                 print()  # Add spacing between k values
         
-        print(f"🎉 All benchmarks completed! Results saved to {results_file}")
+        print(f"All benchmarks completed. Results saved to {results_file}")
         return results_file
         
     except subprocess.TimeoutExpired:
-        print(f"⏰ Benchmark timed out after {timeout_minutes} minutes")
+        print(f"Benchmark timed out after {timeout_minutes} minutes")
         return None
     except Exception as e:
-        print(f"❌ Error running benchmarks: {e}")
+        print(f"Error running benchmarks: {e}")
         return None
 
 def parse_benchmark_results(results_file):
@@ -223,36 +219,16 @@ def generate_ascii_charts(averages):
     
     return "\n".join(charts)
 
-def generate_analysis_report(averages, results_file, count):
+def generate_analysis_report(averages, results_file):
     """Generate the complete analysis report"""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     report_file = f"results/benchmark_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
     
     with open(report_file, 'w') as f:
-        f.write(f"""# EDS Dataroot Generation Benchmark Analysis
+        f.write(f"""# Benchmark Results
 
 **Generated:** {timestamp}  
-**Benchmark Runs:** {count} iterations per test  
-**Source Data:** {results_file.split('/')[-1]}
-
-## Executive Summary
-
-This report analyzes the performance of different tree construction approaches for Extended Data Square (EDS) dataroot generation across various sizes.
-
-## EDS Quadrant Layout Reference
-
-```
-Q0 | Q1    (Original data | Row parity)
----+---
-Q2 | Q3    (Column parity | Intersection parity)  
-```
-
-**Stage Optimizations:**
-- **Stage 1**: Merkle columns, NMT rows
-- **Stage 2**: + Merkle for Q2/Q3 row roots (bottom half)
-- **Stage 3**: + Hybrid row trees (Merkle for Q1, NMT for Q0)
-
-## Performance Results
+**Source:** {results_file.split('/')[-1]}
 
 """)
         
@@ -262,8 +238,8 @@ Q2 | Q3    (Column parity | Intersection parity)
         
         for k in k_values:
             f.write(f"### K={k} (EDS {k*2}×{k*2}):\n\n")
-            f.write("| Approach | Time (ms) | Speedup vs NMT | Memory (MB) | Runs | CV% | Description |\n")
-            f.write("|----------|-----------|-----------------|-------------|------|-----|-------------|\n")
+            f.write("| Approach | Time (ms) | Speedup | Memory (MB) | Runs | CV% |\n")
+            f.write("|----------|-----------|---------|-------------|------|-----|\n")
             
             nmt_time = None
             for approach in approaches:
@@ -282,15 +258,6 @@ Q2 | Q3    (Column parity | Intersection parity)
                     else:
                         speedup = "N/A"
                     
-                    # Add description
-                    descriptions = {
-                        'NMT': 'All trees use NMT',
-                        'Stage1': 'Merkle columns, NMT rows',
-                        'Stage2': '+ Merkle for Q2/Q3 rows',
-                        'Stage3': '+ Hybrid row trees (Q0:NMT, Q1:Merkle)',
-                        'MerkleTree': 'All trees use Merkle'
-                    }
-                    
                     # Show median if significantly different from mean (high variance)
                     median = data.get('time_median', time_ms)
                     cv = data.get('cv', 0)
@@ -301,7 +268,7 @@ Q2 | Q3    (Column parity | Intersection parity)
                         time_str = f"{time_ms:.0f}" + (f" ±{std:.0f}" if count > 1 and std > 0 else "")
                     
                     cv_str = f"{data.get('cv', 0):.1f}%" if data.get('cv', 0) > 0 else "N/A"
-                    f.write(f"| {approach} | {time_str} | {speedup} | {memory_mb:.0f} | {count} | {cv_str} | {descriptions.get(approach, '')} |\n")
+                    f.write(f"| {approach} | {time_str} | {speedup} | {memory_mb:.0f} | {count} | {cv_str} |\n")
             
             f.write("\n")
         
@@ -310,63 +277,34 @@ Q2 | Q3    (Column parity | Intersection parity)
         f.write(generate_ascii_charts(averages))
         f.write("\n```\n\n")
         
-        # Analysis section
-        f.write("## Analysis\n\n")
-        
-        # Calculate scaling trends
-        stage3_scaling = []
-        for k in k_values:
-            if (k, 'NMT') in averages and (k, 'Stage3') in averages:
-                nmt_time = averages[(k, 'NMT')]['time_ms']
-                stage3_time = averages[(k, 'Stage3')]['time_ms']
-                speedup = nmt_time / stage3_time
-                stage3_scaling.append((k, speedup))
-        
-        if stage3_scaling:
-            f.write("### Stage 3 Scaling Analysis\n\n")
-            f.write("Stage 3 performance vs NMT baseline:\n")
-            for k, speedup in stage3_scaling:
-                f.write(f"- K={k}: {speedup:.2f}× faster than NMT\n")
-            
-            if len(stage3_scaling) > 1:
-                trend = "improving" if stage3_scaling[-1][1] > stage3_scaling[0][1] else "declining"
-                f.write(f"\n**Scaling Trend**: Stage 3 efficiency is {trend} with larger EDS sizes.\n")
-        
-        f.write(f"""
-### Methodology
-
-- **Environment**: Go benchmark framework with `-benchmem` flag
-- **Iterations**: Adaptive per k-value (50 for k=32, down to 3-5 for k=2048)
-- **Statistics**: Mean (μ), Median (M), Standard Deviation, CV% (Coefficient of Variation)
-- **High Variance**: When CV% > 20%, both mean and median shown as "mean(μ)/median(M)"
-- **Timeout**: Extended timeout for large EDS sizes
-- **Validation**: Multiple measurement points for consistency
-
----
-*Generated by automated benchmark analysis pipeline*
-""")
+        f.write("\n")
     
-    print(f"Analysis report generated: {report_file}")
+    print(f"Report generated: {report_file}")
     return report_file
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python3 generate_analysis_report.py <runs> [timeout_minutes] [max_k]")
-        print("Example: python3 generate_analysis_report.py 1 60 64")
-        print("  runs: number of benchmark iterations")
-        print("  timeout_minutes: timeout in minutes (default: 180)")  
+    if len(sys.argv) > 1 and sys.argv[1] in ['-h', '--help', 'help']:
+        print("Usage: python3 benchmark.py [timeout_minutes] [max_k]")
+        print("Example: python3 benchmark.py 360 1024")
+        print("  timeout_minutes: timeout in minutes (default: 360)")  
         print("  max_k: maximum k value to test (default: 1024)")
-        sys.exit(1)
+        print("\nAdaptive iterations are used automatically:")
+        print("  k=32: 50 iterations")
+        print("  k=64: 30 iterations")
+        print("  k=128: 20 iterations")
+        print("  k=256: 15 iterations")
+        print("  k=512: 10 iterations")
+        print("  k=1024: 5 iterations")
+        sys.exit(0)
     
-    count = int(sys.argv[1])
-    timeout_minutes = int(sys.argv[2]) if len(sys.argv) > 2 else 180
-    max_k = int(sys.argv[3]) if len(sys.argv) > 3 else 1024
+    timeout_minutes = int(sys.argv[1]) if len(sys.argv) > 1 else 360
+    max_k = int(sys.argv[2]) if len(sys.argv) > 2 else 1024
     
-    print(f"Starting automated benchmark analysis pipeline...")
-    print(f"Configuration: {count} runs, {timeout_minutes}m timeout, max_k={max_k}")
+    print(f"Starting automated benchmark pipeline...")
+    print(f"Configuration: {timeout_minutes}m timeout, max_k={max_k}")
     
     # Step 1: Run benchmarks
-    results_file = run_benchmarks(count, timeout_minutes, max_k)
+    results_file = run_benchmarks(timeout_minutes, max_k)
     if not results_file:
         print("Benchmark failed. Exiting.")
         sys.exit(1)
@@ -383,12 +321,12 @@ def main():
     averages = calculate_averages(data)
     
     # Step 4: Generate report
-    print("Generating analysis report...")
-    report_file = generate_analysis_report(averages, results_file, count)
+    print("Generating report...")
+    report_file = generate_analysis_report(averages, results_file)
     
-    print(f"\n✅ Pipeline completed successfully!")
-    print(f"📊 Report: {report_file}")
-    print(f"📁 Raw data: {results_file}")
+    print(f"\nPipeline completed successfully.")
+    print(f"Report: {report_file}")
+    print(f"Raw data: {results_file}")
 
 if __name__ == "__main__":
     main()
